@@ -1,2 +1,2 @@
 // Add flesh to Leather recipe
-furnace.addRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
+furnace.addRecipe(<minecraft:leather>, <xlfoodmod:flesh>);
