@@ -6,6 +6,8 @@ var iron = <ore:ingotIron>;
 var ironblock = <ore:blockIron>;
 var diamond = <ore:gemDiamond>;
 var diamondblock = <ore:blockDiamond>;
+var anychest = <ore:chestWood>;
+var oakchest = <minecraft:chest>;
 
 // Add flesh to Leather recipe
 furnace.addRecipe(leather, <minecraft:rotten_flesh>);
@@ -29,3 +31,6 @@ recipes.addShaped(<minecraft:golden_horse_armor>, [
 recipes.addShaped(<minecraft:iron_horse_armor>, [
 						[ null, null, iron ],
 						[ iron, iron, ironblock]]);
+
+// Convert any chest into oak chest
+recipes.addShapeless(oakchest, [ anychest ]);
